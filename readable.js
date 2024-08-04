@@ -15,7 +15,7 @@ const famous_quotes = [
 
 class StreamFromArray extends Readable {
   constructor(array) {
-    super();
+    super({ encoding: "UTF-8" });
     this.array = array;
     this.index = 0;
   }
